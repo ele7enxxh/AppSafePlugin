@@ -1,1 +1,1 @@
-# AppSafeSDK
+# AppSafePlugin
