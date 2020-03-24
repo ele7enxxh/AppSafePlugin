@@ -6,11 +6,11 @@
 	<dict>
 		<key>Headers/FMDeviceManager.h</key>
 		<data>
-		xXGfPotqPPsFNkusb3Pa6AIOcOo=
+		aJ/0j690MBMnsHFRR+NyfGLZMXQ=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		HqZiKfruPa4W70QMs3s0fobmGl0=
+		672u1WeQdHtLzwCjgGgu7qHvXEk=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -19,17 +19,17 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			xXGfPotqPPsFNkusb3Pa6AIOcOo=
+			aJ/0j690MBMnsHFRR+NyfGLZMXQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			kuBexvzbF7cpjgWQx4mrsbAceuhwLLvl99AG/7rd+9g=
+			/SbDNTkM2rq2th7K1QMzH2HlCUgrJf77ltqG0ex8k3A=
 			</data>
 		</dict>
 	</dict>
 	<key>rules</key>
 	<dict>
-		<key>^</key>
+		<key>^.*</key>
 		<true/>
 		<key>^.*\.lproj/</key>
 		<dict>
@@ -60,24 +60,12 @@
 			<key>weight</key>
 			<real>11</real>
 		</dict>
-		<key>^</key>
-		<dict>
-			<key>weight</key>
-			<real>20</real>
-		</dict>
 		<key>^(.*/)?\.DS_Store$</key>
 		<dict>
 			<key>omit</key>
 			<true/>
 			<key>weight</key>
 			<real>2000</real>
-		</dict>
-		<key>^(Frameworks|SharedFrameworks|PlugIns|Plug-ins|XPCServices|Helpers|MacOS|Library/(Automator|Spotlight|LoginItems))/</key>
-		<dict>
-			<key>nested</key>
-			<true/>
-			<key>weight</key>
-			<real>10</real>
 		</dict>
 		<key>^.*</key>
 		<true/>
@@ -113,13 +101,6 @@
 			<true/>
 			<key>weight</key>
 			<real>20</real>
-		</dict>
-		<key>^[^/]+$</key>
-		<dict>
-			<key>nested</key>
-			<true/>
-			<key>weight</key>
-			<real>10</real>
 		</dict>
 		<key>^embedded\.provisionprofile$</key>
 		<dict>

@@ -9,8 +9,8 @@
 Pod::Spec.new do |s|
 
   s.name         = "AppSafePlugin"
-  s.version      = "3.2.0"
-  s.summary      = "version 3.2.0"
+  s.version      = "3.5.6"
+  s.summary      = "version 3.5.6"
 
   s.homepage     = "http://bastion.tongdun.cn/fp/document.htm"
 

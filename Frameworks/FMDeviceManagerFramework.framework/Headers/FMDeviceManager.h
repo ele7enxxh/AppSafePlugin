@@ -5,11 +5,10 @@
 //  Copyright (c) 2016年 Tongdun.inc. All rights reserved.
 //
 
-#define FM_SDK_VERSION @"3.2.0"
+#define FM_SDK_VERSION @"3.5.6"
 
 #import <Foundation/Foundation.h>
 #import <CoreLocation/CoreLocation.h>
-
 
 typedef struct _void {
     void (*initWithOptions)(NSDictionary *);
