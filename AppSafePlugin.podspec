@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
  
   s.author             = { 'Tongdun' => 'http://bastion.tongdun.cn/fp/document.htm' }
  
-  s.platforms    = { :ios => "8.0", :osx => "" }
+  s.platform     = :ios
 
   # s.ios.deployment_target = "8.0"
 
