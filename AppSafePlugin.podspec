@@ -9,23 +9,25 @@
 Pod::Spec.new do |s|
 
   s.name         = "AppSafePlugin"
-  s.version      = "3.5.6"
-  s.summary      = "version 3.5.6"
+  s.version      = "3.5.8"
+  s.summary      = "version 3.5.8"
 
   s.homepage     = "http://bastion.tongdun.cn/fp/document.htm"
 
   s.license      = "MIT"
  
-  s.author             = { 'Tongdun' => 'http://bastion.tongdun.cn/fp/document.htm' }
+  s.author       = { 'Tongdun' => 'http://bastion.tongdun.cn/fp/document.htm' }
  
   s.platform     = :ios
 
-  # s.ios.deployment_target = "8.0"
+  s.ios.deployment_target = "8.0"
 
   s.source       = { :git => "https://github.com/lyeah-ios/AppSafePlugin.git", :tag => "#{s.version}" }
 
   s.requires_arc = true
 
   s.ios.vendored_frameworks = 'Frameworks/FMDeviceManagerFramework.framework'
+
+  s.library   = "resolv"
 
 end
