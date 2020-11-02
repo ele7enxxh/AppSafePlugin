@@ -5,7 +5,7 @@
 //  Copyright (c) 2016年 Tongdun.inc. All rights reserved.
 //
 
-#define FM_SDK_VERSION @"3.6.2"
+#define FM_SDK_VERSION @"3.6.4"
 
 #import <Foundation/Foundation.h>
 #import <CoreLocation/CoreLocation.h>

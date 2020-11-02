@@ -9,8 +9,8 @@
 Pod::Spec.new do |s|
 
   s.name         = "AppSafePlugin"
-  s.version      = "3.6.2"
-  s.summary      = "version 3.6.2"
+  s.version      = "3.6.4"
+  s.summary      = "version 3.6.4"
 
   s.homepage     = "http://bastion.tongdun.cn/fp/document.htm"
 
@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
  
   s.platform     = :ios
 
-  s.ios.deployment_target = "8.0"
+  s.ios.deployment_target = "9.0"
 
   s.source       = { :git => "https://github.com/lyeah-ios/AppSafePlugin.git", :tag => "#{s.version}" }
 
