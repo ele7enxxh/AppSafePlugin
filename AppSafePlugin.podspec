@@ -9,8 +9,8 @@
 Pod::Spec.new do |s|
 
   s.name         = "AppSafePlugin"
-  s.version      = "3.6.4"
-  s.summary      = "version 3.6.4"
+  s.version      = "3.2.7"
+  s.summary      = "包含 3.2.7 稳定版 和 3.6.5 最新版"
 
   s.homepage     = "http://bastion.tongdun.cn/fp/document.htm"
 
@@ -26,8 +26,32 @@ Pod::Spec.new do |s|
 
   s.requires_arc = true
 
-  s.ios.vendored_frameworks = 'Frameworks/FMDeviceManagerFramework.framework'
-
   s.library   = "resolv"
+
+  s.default_subspec  = 'StablePlugin'
+  
+  # 包含IDFA的稳定版
+  s.subspec 'StablePlugin' do |ss|
+    ss.ios.vendored_frameworks = 'Frameworks/Stable/FMDeviceManagerFramework.framework'
+    
+  end
+  
+  # 不包含IDFA的稳定版
+  s.subspec 'StablePluginWithoutIDFA' do |ss|
+    ss.ios.vendored_frameworks = 'Frameworks/Stable/FMDeviceManagerFramework_without_IDFA.framework'
+    
+  end
+
+  # 包含IDFA的最新版
+  s.subspec 'CurrentPlugin' do |ss|
+    ss.ios.vendored_frameworks = 'Frameworks/Current/FMDeviceManagerFramework.framework'
+    
+  end
+  
+  # 不包含IDFA的最新版
+  s.subspec 'CurrentPlugin' do |ss|
+    ss.ios.vendored_frameworks = 'Frameworks/Current/FMDeviceManagerFramework_without_IDFA.framework'
+    
+  end
 
 end
