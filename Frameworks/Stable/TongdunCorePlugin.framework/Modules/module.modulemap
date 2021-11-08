@@ -1,0 +1,6 @@
+framework module TongdunCorePlugin {
+  umbrella header "TongdunCorePlugin.h"
+
+  export *
+  module * { export * }
+}

@@ -9,8 +9,8 @@
 Pod::Spec.new do |s|
 
   s.name         = "AppSafePlugin"
-  s.version      = "3.2.7"
-  s.summary      = "包含 3.2.7 稳定版 和 3.6.5 最新版"
+  s.version      = "3.7.0"
+  s.summary      = "包含 3.7.0-S 稳定版 和 3.7.0-P 最新版"
 
   s.homepage     = "http://bastion.tongdun.cn/fp/document.htm"
 
@@ -32,13 +32,13 @@ Pod::Spec.new do |s|
   
   # 包含IDFA的稳定版
   s.subspec 'StablePlugin' do |ss|
-    ss.ios.vendored_frameworks = 'Frameworks/Stable/FMDeviceManagerFramework.framework'
+    ss.ios.vendored_frameworks = 'Frameworks/Stable/FMDeviceManagerFramework.framework', 'Frameworks/Stable/TongdunCorePlugin.framework'
     
   end
   
   # 不包含IDFA的稳定版
   s.subspec 'StablePluginWithoutIDFA' do |ss|
-    ss.ios.vendored_frameworks = 'Frameworks/Stable/FMDeviceManagerFramework_without_IDFA.framework'
+    ss.ios.vendored_frameworks = 'Frameworks/Stable/FMDeviceManagerFramework_without_IDFA.framework', 'Frameworks/Stable/TongdunCorePlugin.framework'
     
   end
 
