@@ -49,7 +49,7 @@ Pod::Spec.new do |s|
   end
   
   # 不包含IDFA的最新版
-  s.subspec 'CurrentPlugin' do |ss|
+  s.subspec 'CurrentPluginWithoutIDFA' do |ss|
     ss.ios.vendored_frameworks = 'Frameworks/Current/FMDeviceManagerFramework_without_IDFA.framework'
     
   end
